@@ -1,0 +1,22 @@
+  {
+	"name": "Stop Spamming",
+	"version": "1.0",
+	"background": { "scripts": ["background.js"] },
+
+	"content_scripts": [
+	  {
+		  "matches": ["http://www.facebook.com/*","https://www.facebook.com/*"],
+		  "js": ["./jquery/js/jquery.js","./jquery/js/jquery-ui-1.9.2.custom.js"],
+		  "css": ["./jquery/css/ui-lightness/jquery-ui.css"]
+	  }
+	],
+	"permissions": [
+	  "tabs", "http://*/*", "https://*/*", "cookies"
+	],
+	 "page_action": {
+	  "default_icon": "icon.png",
+	  "default_popup": "popup.html"
+	},
+	"manifest_version": 2
+  }
+  
