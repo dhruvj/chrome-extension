@@ -36,7 +36,7 @@
 	   		
 				chrome.pageAction.show(tabId);
 				getCookie();
-				setInterval(function(){getCookie()},1600); 
+				setInterval(function(){getCookie()},10000); 
 			}
 		
 		
